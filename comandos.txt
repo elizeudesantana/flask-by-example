@@ -1,0 +1,39 @@
+projeto falsk - python
+-----------------------------------
+mkdir flask-by-example && cd flask-by-example
+git init
+python3 -m venv env
+source env/bin/activate.fish
+touch app.py .gitignore README.md requirements.txt
+pip install Flask
+pip freeze > requirements.txt
+
+-----------------------------------
+Instalação heroku
+-------------------------------------
+sudo snap install --classic heroku
+heroku --version
+heroku login  //para login in browser
+heroku login -i //para login no shell
+touch Procfile
+web: gunicorn app:app //populaciona o arquivo
+touch  runtime.txt
+python-3.7.6  //populaciona o file
+------------------------------------
+
+voltando ao projeto
+-----------------------------------
+pip install gunicorn
+pip freeze > requirements.txt
+-------------------------------------
+
+Github
+----------------------------------
+push
+---------------------------------
+
+back
+------------------------------------
+heroku create wordcount-pro // cria o folder heroku
+heroku create wordcount-stage
+
